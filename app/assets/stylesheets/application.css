@@ -16,7 +16,7 @@
 
  * {
    font-family: sans-serif;
-   background-color: #003f47;
+   background-color: #005e66;
  }
 
  nav {
@@ -34,8 +34,30 @@
    background-color: black;
  }
 
+ .home h1, .series-content h1, .users-index h1 {
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: bold;
+  font-size: 70px;
+  margin: 10px;
+}
+
  .home img {
   border-radius: 10px;
   border: 8px solid black;
   margin: 10px;
+}
+
+.series-content h2 {
+  background-color: #000d14;
+  display: inline-block;
+  padding: 10px;
+  color: #e0e0e0;
+  margin: 30px 30px;
+  border-radius: 8px;
+}
+
+.series-content h2:hover {
+  color: white;
 }
