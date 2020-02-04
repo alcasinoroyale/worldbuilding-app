@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>WorldbuildingApp</title>
+    <title>Worldbuilding App</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -10,6 +10,16 @@
   </head>
 
   <body>
+    <header>
+    <nav>
+      <%= link_to "Worldbuilding", root_path %>
+      <%= link_to "Create Series", series_index_path %>
+      <%= link_to "Writers" %>
+      <%= link_to "Brainstorm" %>
+      <%= link_to "Profile" %>
+      <%= link_to "Logout" %>
+    </nav>
+  </header>
     <%= yield %>
   </body>
 </html>
