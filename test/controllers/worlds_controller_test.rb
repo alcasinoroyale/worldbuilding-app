@@ -1,8 +1,8 @@
 require 'test_helper'
 
-class SeriesControllerTest < ActionDispatch::IntegrationTest
+class WorldsControllerTest < ActionDispatch::IntegrationTest
   test "should get index" do
-    get series_index_url
+    get worlds_index_url
     assert_response :success
   end
 

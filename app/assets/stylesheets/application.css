@@ -49,6 +49,16 @@
   margin: 10px;
 }
 
+.series-content a {
+  text-decoration: none;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: black;
+}
+
+.series-content a:hover {
+  color: #001626;
+}
+
 .series-content h2 {
   background-color: #000d14;
   display: inline-block;
