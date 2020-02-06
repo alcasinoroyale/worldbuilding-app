@@ -9,4 +9,13 @@
   <%= f.password_field :password, class: 'form-text-box' %><br><br>
   <%= f.submit "Create User", class: 'form-submit-box' %>
 <% end %>
+    <p>or</p>
+    <div class="google">
+      <%= link_to do %>
+      <%= image_tag("google-icon.png") %>
+      Sign in with Google
+      <% end %>
+    </div>
+    <br>
+  <br><%= link_to "Already have an account?", '/login', class: "button" %>
 </div>
