@@ -5,19 +5,26 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag 'application', 'https://fonts.googleapis.com/css?family=Source+Sans+Pro', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag 'application', 'https://fonts.googleapis.com/css?family=Source+Sans+Pro|Roboto:700', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
+
+    <div>
+      <% if flash[:message] %>
+        <h3><%= flash[:message] %></h3>
+      <% end %>
+    </div>
+
     <header>
     <nav>
       <%= link_to "Worldbuilding", root_path %>
+      <%= link_to "Create World", worlds_path %>
       <% if !logged_in? %>
         <%= link_to "Sign Up", new_user_path %>
         <%= link_to "Login", '/login' %>
       <% elsif logged_in? %>
-      <%= link_to "Create World", worlds_path %>
       <%= link_to "Writers", users_path %>
       <%= link_to "Brainstorm" %>
       <%= link_to "Profile" %>
