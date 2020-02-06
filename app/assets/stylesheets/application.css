@@ -71,3 +71,26 @@
 .series-content h2:hover {
   color: white;
 }
+
+/* User Form */
+.form-label {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.form-text-box {
+  font-size: 16px;
+  margin-top: 10px;
+  width: 150px;
+  height: 20px;
+  background-color: white;
+}
+
+.form-submit-box {
+  font-size: 18px;
+  background-color: black;
+  padding: 4px 16px;
+  border-radius: 8px;
+  color: #f0f0f0;
+  border: none;
+}
