@@ -110,7 +110,7 @@ body {
   width: 300px;
 }
 
-.sign-up a {
+.sign-up a, .login a {
   color: green;
 }
 
@@ -130,6 +130,6 @@ body {
   padding: 2px;
 }
 
-.sign-up p {
+.sign-up p, .login p {
   padding: 0 50px;
 }
