@@ -1,21 +1,23 @@
-<div class="errors">
-<% if @user.errors.any? %>
-  <h3>The user wasn't created because:</h3>
-  <% @user.errors.full_messages.each do |msg| %>
-    <h4><%= msg %></h4>
-  <% end %>
-<% end %>
-</div>
-
 <div class="sign-up">
 <h1>Sign Up</h1>
 <%= form_for @user do |f| %>
-  <%= f.label :username, "Username", class: 'form-label' %><br>
-  <%= f.text_field :username, class: 'form-text-box' %><br><br>
-  <%= f.label :email, "Email", class: 'form-label' %><br>
-  <%= f.text_field :email, class: 'form-text-box' %><br><br>
-  <%= f.label :password, "Password", class: 'form-label' %><br>
-  <%= f.password_field :password, class: 'form-text-box' %><br><br>
+
+  <%= f.label :username, "Username", class: 'form-label' %>
+  <%= f.text_field :username, class: 'form-text-box' %>
+  <%= errors_for @user, :username %>
+
+  <%= f.label :email, "Email", class: 'form-label' %>
+  <%= f.text_field :email, class: 'form-text-box' %>
+  <%= errors_for @user, :email %>
+
+  <%= f.label :password, "Password", class: 'form-label' %>
+  <%= f.password_field :password, class: 'form-text-box' %>
+  <%= errors_for @user, :password %>
+  
+  <%= f.label :password_confirmation, "Confirm Password", class: 'form-label' %>
+  <%= f.password_field :password_confirmation, class: 'form-text-box' %>
+  <%= errors_for @user, :password_confirmation %>
+
   <%= f.submit "Create User", class: 'form-submit-box' %>
 <% end %>
     <p>or</p>
