@@ -14,7 +14,6 @@ class UsersController < ApplicationController
       flash[:message] = "User created successfully!"
       redirect_to user_path(@user)
     else
-      flash[:message] = "User wasn't created."
       render :new
     end
   end

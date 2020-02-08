@@ -133,3 +133,11 @@ body {
 .sign-up p, .login p {
   padding: 0 50px;
 }
+
+.errors {
+  margin: 20px;
+}
+
+.errors h3 {
+  color: red;
+}
