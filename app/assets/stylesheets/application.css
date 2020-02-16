@@ -140,4 +140,45 @@ body {
 
 .error_explanation {
   color: red;
+  text-transform: capitalize;
+}
+
+/* Responsive Navigation */
+
+.navigation .icon {
+  display: none;
+  margin-top: 8px;
+}
+
+.navigation .icon i {
+  color: #f0f0f0;
+}
+
+@media screen and (max-width: 800px) {
+  .navigation a {display: none;}
+  .navigation a.icon {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 800px) {
+
+  .navigation.responsive {
+    background-color: black;
+    position: relative;
+    height: 280px;
+  }
+
+  .navigation.responsive a {
+    display: block;
+    border-top: 1px solid white;
+    width: 160px;
+    padding: 4px;
+    text-align: center;
+  }
+
+  .navigation.responsive .icon {
+    margin-top: 10px;
+    border-top: none;
+  }
 }
