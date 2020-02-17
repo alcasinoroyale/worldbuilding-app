@@ -81,6 +81,13 @@ body {
   cursor: pointer;
 }
 
+.users-index h2 {
+  font-size: 36px;
+  color: #004a12;
+  text-transform: uppercase;
+  margin: 10px;
+}
+
 /* User Form */
 .form-label {
   font-size: 18px;

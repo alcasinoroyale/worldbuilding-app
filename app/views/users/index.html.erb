@@ -1,3 +1,7 @@
 <div class="users-index">
   <h1>Writers Corner</h1>
+
+  <% @users.each do |user| %>
+    <h2><%= user.username %></h2>
+  <% end %>
 </div>

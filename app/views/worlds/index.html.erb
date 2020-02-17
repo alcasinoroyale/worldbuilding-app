@@ -1,5 +1,9 @@
 <div class="series-content">
-  <h1><%= link_to "Create World", new_world_path %></h1>
+  <% if logged_in? %>
+    <h1><%= link_to "Create World", new_world_path %></h1>
+  <% else %>
+    <h1><%= link_to "Create World", '/login' %></h1>
+  <% end %>
   <h2>Characters</h2>
   <h2>Culture</h2>
   <h2>Geography</h2>
