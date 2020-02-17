@@ -2,10 +2,12 @@
 
 one:
   title: MyString
+  description: MyString
   genre: MyString
-  inspirations: MyText
+  inspiration: MyString
 
 two:
   title: MyString
+  description: MyString
   genre: MyString
-  inspirations: MyText
+  inspiration: MyString

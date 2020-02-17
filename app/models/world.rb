@@ -1,4 +1,4 @@
 class World < ApplicationRecord
   belongs_to :user
-  validates :title, :genre, :inspriations, presence: true
+  validates :title, :description, :genre, :inspiration, presence: true
 end

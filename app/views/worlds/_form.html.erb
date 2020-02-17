@@ -9,9 +9,13 @@
   <%= f.text_field :genre, class: 'form-text-box'  %>
   <%= errors_for @world, :genre %>
 
-  <%= f.label :inspirations, class: 'form-label'  %>
-  <%= f.text_area :inspirations, class: 'form-text-area'  %>
-  <%= errors_for @world, :inspirations %>
+  <%= f.label :description, class: 'form-label' %>
+  <%= f.text_area :description, class: 'form-text-area'  %>
+  <%= errors_for @world, :description %>
+
+  <%= f.label :inspiration, class: 'form-label'  %>
+  <%= f.text_area :inspiration, class: 'form-text-area'  %>
+  <%= errors_for @world, :inspiration %>
 
   <%= f.submit "Create World", class: 'form-submit-box' %>
 <% end %>
