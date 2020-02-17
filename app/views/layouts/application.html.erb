@@ -30,7 +30,7 @@
       <% elsif logged_in? %>
       <%= link_to "Writers", users_path %>
       <%= link_to "Brainstorm" %>
-      <%= link_to "Profile" %>
+      <%= link_to "Profile", user_path(current_user) %>
       <%= link_to "Logout" %>
       <% end %>
     </nav>

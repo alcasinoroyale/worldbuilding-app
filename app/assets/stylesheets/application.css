@@ -193,3 +193,8 @@ body {
     border-top: none;
   }
 }
+
+/* Profile Page */
+.profile-page {
+  margin: 20px;
+}
