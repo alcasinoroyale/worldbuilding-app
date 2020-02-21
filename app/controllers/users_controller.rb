@@ -23,14 +23,30 @@ before_action :set_user, only: [:show, :edit, :update]
   def show
   end
 
+  def edit
+  end
+
+  def update
+    if @user.update(user_info_params)
+      flash[:message] = "#{@user.username} updated successfully!"
+      redirect_to user_path(@user)
+    else
+      render 'edit'
+    end
+  end
+
   private
 
   def user_params
     params.require(:user).permit(:username, :email, :password, :password_confirmation)
   end
 
+  def user_info_params
+    params.require(:user).permit(:username, :password, :bio, :favorite_genre)
+  end
+
   def set_user
     @user = User.find(params[:id])
   end
-  
+
 end
