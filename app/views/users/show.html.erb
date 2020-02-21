@@ -1,8 +1,13 @@
 <div class="profile-page">
   <h1><%= @user.username %>'s Profile</h1>
 
+<div class="user-info">
+  <%= image_tag avatar_url(@user) %>
+  <h4><%= @user.bio %></h4>
+  <h4>Favorite Genre - <%= @user.favorite_genre %></h4>
+</div>
+
 <% if logged_in? && @user.id == current_user.id %>
-  <br>
   <%= link_to 'Edit Profile', edit_user_path(@user), :class => 'edit-profile' %>
 <% end %>
 
