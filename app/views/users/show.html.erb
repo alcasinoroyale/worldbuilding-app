@@ -4,7 +4,9 @@
 <div class="user-info">
   <%= image_tag avatar_url(@user) %>
   <h4><%= @user.bio %></h4>
+  <% if @user.favorite_genre != nil %>
   <h4>Favorite Genre - <%= @user.favorite_genre %></h4>
+  <% end %>
 </div>
 
 <% if logged_in? && @user.id == current_user.id %>
